@@ -72,9 +72,9 @@ class JointNode(TreeNode[T]):
     def __repr__(self):
         result = ""
         if self.has_left():
-            result += self.getLeft().__repr__()
+            result += self.left.__repr__()
         if self.has_right():
-            result += self.getRight().__repr__()
+            result += self.right.__repr__()
         return result;
 
     def print_tree(self, indentation_level:int=0):
